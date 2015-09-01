@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VanillaTree</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Tree test project">
+        <meta name="Keywords" content="Tree, test">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <link href="assets/css/style.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+        <script src="assets/js/app.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">VanillaTree</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container"></div>
+                <div class="sidebar">
+                    <div class="sidebar-container">
+                        <ul class="list-group tree root-tree"></ul>
+                        <a class="btn btn-primary btn-block btn-add-root" ng-click="sidebarData.showAddModal()">Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--templates-->
+        <li class="list-group-item element-template">
+            <div class="element-container">
+                <a class="button-remove" title="Remove"><i class="icon-trash"></i></a>
+                <span class="name"></span>
+                <a class="button-edit" title="Edit element"><i class="icon icon-cogs"></i></a>
+                <a class="button-add" title="Add child"><i class="icon icon-plus-square"></i></a>
+            </div>
+        </li>
+
+        <ul class="list-group tree list-template"></ul>
+
+        <form class="form-inline form-template">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control name-input" placeholder="Name">
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+            <a role="button" class="btn btn-link button-cancel">Cancel</a>
+        </form>
+    </body>
+</html>
